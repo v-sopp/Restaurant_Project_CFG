@@ -1,4 +1,83 @@
-.image_size {
-    width: 100%;
-    height: auto;
+.carousel-item img {
+    width: 300px;
+    height: 600px;
+}
+
+#picture_carousel {
+    border: solid;
+    height: 25%;
+    padding: 25px 50px 25px 50px;
+    margin: 0px 50px 75px 50px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_additions_section {
+    border: solid;
+    height: 25%;
+    padding: 25px 50px 25px 50px;
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.dish_additions {
+    border: solid;
+    height: 25%;
+    padding: 25px 50px 25px 50px;
+    margin: 0px 50px 75px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.new_dish {
+    margin: 10px 10px 10px 10px;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:  white;
+	border-radius:  4px;
+	width:  450px;
+    height: 200px;
+	padding:  24px;
+}
+
+.image_gallery_section {
+    border: solid;
+    height: 25%;
+    padding: 25px 50px 25px 50px;
+    margin: 0px 50px 75px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.newsletter_sign_up_section {
+    border: solid;
+    height: 25%;
+    padding: 25px 50px 25px 50px;
+    margin: 0px 50px 75px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign_up_bar {
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
