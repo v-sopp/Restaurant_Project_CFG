@@ -10,35 +10,36 @@
     <title> Home Page </title>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html"> Eggztra </a>
+    <div class="navbar_header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="./index.html"> <i class="fa-solid fa-egg"></i> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse bg-warning" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="./index.html"> Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link nav_text" href="./index.html"> Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/menu.html"> Menu </a>
+            <li class="nav-item bg-warning">
+              <a class="nav-link nav_text" href="html/menu.html"> Menu </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="html/find_local.html"> Find Your Local Restaurant </a>
+            <li class="nav-item bg-warning">
+                <a class="nav-link nav_text" href="html/find_local.html"> Find Your Local Restaurant </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="html/book.html"> Book </a>
+            <li class="nav-item bg-warning">
+                <a class="nav-link nav_text" href="html/book.html"> Book </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="html/offers.html"> Offers & Events </a>
+            <li class="nav-item bg-warning">
+                <a class="nav-link nav_text" href="html/offers.html"> Offers & Events </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="html/contact.html"> Contact Us </a>
+            <li class="nav-item bg-warning">
+                <a class="nav-link nav_text" href="html/contact.html"> Contact Us </a>
             </li>
           </ul>
         </div>
     </nav>
+    </div>
 
     <div class="main_picture_container"> 
       
@@ -63,8 +64,6 @@
           
         <div class="new_dish_container">
             <h2 class="dish_heading"> Wild mushrooms on toat with baked eggs & spinach </h2>
-            <i class="fa-solid fa-leaf"></i>
-            <i class="fa-solid fa-utensils"></i>
             <div class="new_dish_image">
               <img src="https://simply-delicious-food.com/wp-content/uploads/2019/02/creamy-mushroom-toast-1.jpg" alt="Mushrooms on toast">
             </div>
@@ -72,8 +71,6 @@
           
         <div class="new_dish_container">
             <h2 class="dish_heading"> Our November cocktail of the month - Bloody Mary Cocktail </h2>
-            <i class="fa-solid fa-wine-glass"></i>
-            <i class="fa-solid fa-crown"></i>
             <div class="new_dish_image">
               <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/bloody-mary-a2983ba.jpg" alt="Bloody mary cocktail">
             </div>
@@ -81,8 +78,6 @@
 
         <div class="new_dish_container">
             <h2 class="dish_heading"> Buttermilk pancakes with berry compote & vanilla ice-cream </h2>
-            <i class="fa-solid fa-ice-cream"></i>
-            <i class="fa-solid fa-utensils"></i>
             <div class="new_dish_image">
               <img src="https://www.ocado.com/cmscontent/recipe_image_large/30629010.jpg?Z8bg" alt="Berry pancakes">
             </div>
@@ -95,15 +90,10 @@
      
     
     <div class="image_gallery_container">
-
-      <div class="image_gallery_heading_child">
-        <h1 class="homepage_heading"> Image Gallery </h1>
-        <p class="image_gallery_text"> Selection of menu items/ restaurants* </p>
-      </div>
-      
+        
       <div class="row">
         
-        <div class="column">
+        <div class="column" id="column_left">
           <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/4c/02/93/getlstd-property-photo.jpg" alt="Our Bath restaurant">
           <img src="https://media-cdn.tripadvisor.com/media/photo-p/1b/dc/18/92/photo0jpg.jpg" alt="Cinnammon Toast with strawberries and chocolate dipping sauce">
           <img src="https://blackbeardiner.com/wp-content/uploads/2016/10/Volcano-2_1000px_wide.jpg" alt="Our American special - eggs, pancakes, sausages and bacon">
@@ -112,7 +102,7 @@
           <img src="https://media.architecturaldigest.com/photos/5a678e05eee5ae622449412b/master/w_320%2Cc_limit/CaliforniaBeachwoodCafe_MG_6956PhotoCreditRayKachatorian.jpg" alt="Our Brighton restaurant">
         </div>
         
-        <div class="column">
+        <div class="column" id="column_middle">
           <img src="https://media.architecturaldigest.com/photos/5d8a92d0b9bc39000864c1aa/master/w_1600%2Cc_limit/SilverLiningDiner_MaxTouhey12.jpg" alt="Our Edinburgh restaurant">
           <img src="https://i.pinimg.com/originals/c3/b8/4f/c3b84faf5a48783e93c89012c45e371f.jpg" alt="Our Manchester restaurant">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHElLDM_JMob6Kekjzvh9T3zfcb_X7M5Tq2wgb-jlJNg5Vqqo71d_GLIgh1T2jv8h3G_E&usqp=CAU" alt="Our Cardiff restaurant">
@@ -122,20 +112,20 @@
           FizmpmqpbDw/BVOI7b/4v+LUIWOfA2P3EjKMO0ueS0GIieFgp9XCMJHVG6EKFwRLljlPDtDuyN1LpsHLkhChikkUmxsECmIFhuhCcUcdTA2CA88+CEIBnTKhg35KPiKruZQhD4BcjlI9XyH0UnkhChA+TG9Lc0rNDQHkT4d3cotMXbv6lCFm6rt/Jt6b2s2XR95LSZMh7e7cgXjfzWkqPI4oQur0H/mcrrPexkvJ4pjHVnN2MeQSIW98GOPuKvN8W9jJa4gx4j0NlWZTiH1j+0c4jkCWj0bASIWafY6WNLSzX5fgaTRZjR5KQ7dCFbExT9w21KhCYUBsuUIQAhQhCCT/2Q==" alt="Buttermilk pancake stack with berries and cream, topped with maple sauce"> 
         </div>
 
-        <div class="column">
-          <img src="https://media.istockphoto.com/photos/grand-slam-breakfast-pancakes-bacon-and-eggs-picture-id872530882?k=20&m=872530882&s=612x612&w=0&h=01ZMJvfEQULCc_YR0G3b1OTmE1NVAqfxIiaqDvbScbQ=">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQkqG7hrcJggSrzoIJPEYH0rLrtxueL8WTK5uEVpg9xe-ezgoIOgN3dKueBA5AE379Zh8&usqp=CAU">
-          <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/ce/59/68/the-decor-is-light-and.jpg">
-          <img src="https://www.seriouseats.com/thmb/2G6oZ-Dc3uKE8gF4K8qEgV5Mhic=/735x0/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2012__07__20120808-216637-british-bites-guide-to-a-fry-up-15424528acbf4bb28ccba2aaecf139b7.jpg">
-          <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/0e/ae/9b/onze-diner-in-amerikaanse.jpg">
-          <img src="https://www.lacademie.com/wp-content/uploads/2022/05/breakfast-drinks.jpg">
+        <div class="column" id="column_middle">
+          <img src="https://media.istockphoto.com/photos/grand-slam-breakfast-pancakes-bacon-and-eggs-picture-id872530882?k=20&m=872530882&s=612x612&w=0&h=01ZMJvfEQULCc_YR0G3b1OTmE1NVAqfxIiaqDvbScbQ=" alt="Pancakes with fried egg and american-style bacon">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQkqG7hrcJggSrzoIJPEYH0rLrtxueL8WTK5uEVpg9xe-ezgoIOgN3dKueBA5AE379Zh8&usqp=CAU" alt="Our Cambridge restaurant">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/ce/59/68/the-decor-is-light-and.jpg" alt="Our Oxford restaurant">
+          <img src="https://www.seriouseats.com/thmb/2G6oZ-Dc3uKE8gF4K8qEgV5Mhic=/735x0/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2012__07__20120808-216637-british-bites-guide-to-a-fry-up-15424528acbf4bb28ccba2aaecf139b7.jpg" alt="Classic fry up">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/0e/ae/9b/onze-diner-in-amerikaanse.jpg" alt="Our Glasgow restaurant">
+          <img src="https://www.lacademie.com/wp-content/uploads/2022/05/breakfast-drinks.jpg" alt="Tea and orange juice">
         </div>
 
-        <div class="column">
-          <img src="https://insanelygoodrecipes.com/wp-content/uploads/2021/10/Breakfast-Smoothies-in-Small-Jars-683x1024.jpg">
-          <img src="https://forktospoon.com/wp-content/uploads/2021/11/Air-Fryer-Fried-Eggs.jpg">
-          <img src="https://i.pinimg.com/originals/f8/5c/4a/f85c4a8bdef4b050596ae245cb21d83c.jpg">
-          <img src="https://www.allrecipes.com/thmb/VaNVn36dfy1nCwL32QM351gWDFg=/2000x2000/filters:no_upscale()/20513-classic-waffles-mfs-023-b0e48a9c4226434a9142a1eb45336258.jpg">
+        <div class="column" id="column_right">
+          <img src="https://insanelygoodrecipes.com/wp-content/uploads/2021/10/Breakfast-Smoothies-in-Small-Jars-683x1024.jpg" alt="Smoothies">
+          <img src="https://forktospoon.com/wp-content/uploads/2021/11/Air-Fryer-Fried-Eggs.jpg" alt="Fried eggs on sourdough toast">
+          <img src="https://i.pinimg.com/originals/f8/5c/4a/f85c4a8bdef4b050596ae245cb21d83c.jpg" alt="Our Newcastle restaurant">
+          <img src="https://www.allrecipes.com/thmb/VaNVn36dfy1nCwL32QM351gWDFg=/2000x2000/filters:no_upscale()/20513-classic-waffles-mfs-023-b0e48a9c4226434a9142a1eb45336258.jpg" alt="Waffles with salted caramel sauce">
         </div> 
 
       </div>
@@ -149,21 +139,80 @@
 
       <div class="newsletter_sign_up_child">
         
-        <h1 class="homepage_heading"> Sign up to our newsletter </h1>
-        <p> List some benefits of the newsletter </p>
+        <h1 class="homepage_heading" id="newsletter"> Sign up to our newsletter </h1>
+        <p class="newsletter_text"> Sign up for all the latest Eggztra news, opening information, offers and more. </p>
+        <p class="newsletter_text"> By joining the newsletter you will become a member of the Eggztra Breakfast Club, where you can find exclusive discounts and perks (like free food!) </p>
 
         <div class="sign_up_bar">
-          <input type="text" />
-          <input type="text" />
-          <button class="button_style"> Sign up </button>
+          <input id="first_name_input" type="text" placeholder="First Name"/>
+          <input id="surname_input" type="text" placeholder="Surname"/>
+          <input id="email_input" type="text" placeholder="Email Address"/>
+          <button class="button_style"> Sign up! </button>
         </div>
 
       </div>
 
       </div>
     
-</div>
-      
+
+  <div class="card text-center">
+    
+    <div class="card_header">
+      <ul class="nav nav-pills card-header-pills">
+        <li class="nav-item bg-warning">
+          <a class="nav-link active" href="./index.html"> Home </a>
+        </li>
+        <li class="nav-item bg-warning">
+          <a class="nav-link" href="html/menu.html"> Menu </a>
+        </li>
+        <li class="nav-item bg-warning">
+          <a class="nav-link" href="html/find_local.html"> Find Your Local Restaurant </a>
+        </li>
+        <li class="nav-item bg-warning">
+          <a class="nav-link" href="html/book.html"> Book </a>
+        </li>
+        <li class="nav-item bg-warning">
+          <a class="nav-link" href="html/offers.html"> Offers & Events </a>
+        </li>
+        <li class="nav-item bg-warning">
+          <a class="nav-link" href="html/contact.html"> Contact Us </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card_body">
+
+      <div class="contact_footer">
+        <h5 class="contact_details_footer"> Contact Us </h5>
+        <ul>
+          <li class="list_contact"> <strong> Address:</strong> 15-17 Royal Mile, Edinburgh, Scotland </li>
+          <li class="list_contact"> <strong> Phone:</strong> 01156 772934 </li>
+          <li class="list_contact"> <strong> Email:</strong> Eggztra@gmail.com </li>
+        </ul>
+      </div>
+
+      <div class="footer_sign_up">
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <h5 class="card_title"> Stay up to date with our newsletter </h5>
+      <input id="email_footer" type="text" placeholder="Enter Email Here"/>
+      <button class="btn btn-primary"> Sign up! </a> </button>
+      </div>
+
+      <div class="hours_footer">
+        <h5 class="opening_footer"> Opening Hours </h5>
+        <ul>
+          <li class="list_hours"> Monday to Thursday 8am-4pm </li>
+          <li class="list_hours"> Friday & Saturday 8am-10pm </li>
+          <li class="list_hours"> Sunday 10am-10pm </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
