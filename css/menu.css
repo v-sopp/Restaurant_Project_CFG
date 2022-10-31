@@ -1,0 +1,286 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+
+.navbar_header {
+    background-color: #ffc107;
+}
+
+.nav_text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bolder;
+}
+/* Add a black background color to the top navigation */
+/*.topnav {
+    background-color: blue;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  /*.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  /*.topnav a:hover {
+    background-color: gold;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  /* .topnav a.active {
+    background-color: blue;
+    color: white;
+  } */ 
+
+header{
+background-image: url('https://img.freepik.com/premium-vector/scrambled-eggs-seamless-pattern_98480-578.jpg?w=2000');
+background-size: contain;
+text-align: center;
+padding:5px;
+}
+
+#foodButton, #drinkButton{
+    background-color: white;
+    border-radius: 5px;
+    border-color: black;
+    padding: 5px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: solid;
+    text-size-adjust: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.menuwrap{
+    background-color: peachpuff;
+    padding:2%;
+    margin: 2%;
+    display:block;
+    border-color: black;
+    border-style: grove;
+    border-radius: 5px;
+}
+
+.menu .heading{
+    text-align: center;
+}
+
+.menuwrap h3{
+    background-color: blue;
+    color: white;
+    border-radius:5px;
+    padding: 5px;
+}
+
+.menu-section{
+    border-color: black;
+    border-style: dashed;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+
+.item-row{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+
+.menuitem{
+    flex:1 1 0;
+    margin: 5px;
+}
+
+/* Find us*/
+
+#findus{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    background-color: peachpuff;
+    text-align: left;
+    
+}
+
+.map{
+    padding:5px;
+}
+
+.nobull{
+    list-style: none;
+}
+
+/* Newsletter sign up section  */
+
+.newsletter_sign_up_section_container {
+    background-color: blue;
+    border: 3px solid peachpuff;
+    border-radius: 25px;
+    padding: 25px 50px 25px 50px;
+    margin: 0px 50px 75px 50px;
+    display: flex;
+}
+
+.logo_newsletter_child {
+    width: 15%;
+    float: left;
+    padding: 30px 10px 10px 20px;
+    background-color: peachpuff;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.logo_newsletter_child img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.newsletter_sign_up_child {
+    width: 85%;
+    float: left;
+    background-color: blue;
+    display: flex;
+    border-radius: 0px 25px 25px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.homepage_heading {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    align-items: center;
+}
+
+#newsletter {
+    padding: 10px 0px 10px 0px;
+}
+
+.newsletter_text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    align-items: center;
+}
+
+#first_name_input {
+    margin: 5px 5px 10px 5px;
+}
+
+#surname_input {
+    margin: 5px 5px 10px 5px;
+}
+
+#email_input {
+    margin: 5px 5px 10px 5px;
+}
+
+.button_style {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: peachpuff;
+    border-color: peachpuff;
+    border-radius: 25px;
+    color: black;
+}
+
+/* Footer */
+
+.card {
+    background-color: #ffc107;
+    max-width: 100%;
+}
+
+.card_header {
+    background-color: #ffc107;
+    max-width: 100%;
+    margin-left:1%;
+    margin-right: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.nav-link {
+    color: black;
+}
+
+.btn {
+    background-color: #2886FF;
+    border-color: #2886FF;
+    border-radius: 25px;
+}
+
+.card_body {
+    background-color: #F3FA5E;
+    display: flex;
+    
+}
+
+.card_title {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#email_footer {
+    margin-bottom: 30px;;
+}
+
+.hours_footer {
+    margin: 10px 25px 10px 10px;
+    padding-top: 0%;
+    padding-left: 20%;
+}
+
+.footer_sign_up {
+    text-align: center;
+    margin-left: 17%;
+    padding-top: 20px;
+}
+
+.list_hours {
+    list-style: none;
+    text-align: left;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: small;
+}
+
+.opening_footer {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.contact_footer {
+    margin: 10px 10px 10px 10px;
+}
+
+.contact_details_footer {
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.list_contact {
+    list-style: none;
+    text-align: left;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: small;
+}
+
