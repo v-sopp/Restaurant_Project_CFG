@@ -222,6 +222,8 @@ padding:5px;
 .card_body {
     background-color: peachpuff;
     display: flex;
+    flex-direction:row;
+    width:100%;
     
 }
 
