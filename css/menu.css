@@ -220,9 +220,8 @@ padding:5px;
 }
 
 .card_body {
-    background-color: #F3FA5E;
+    background-color: #ffc107;
     display: flex;
-    
 }
 
 .card_title {
