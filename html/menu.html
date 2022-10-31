@@ -6,50 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/menu.css"> 
+    <script src="https://kit.fontawesome.com/82d11ba7d2.js" crossorigin="anonymous"></script>
     <script src="../js/menu.js"></script>
-    <link rel="icon" type="image/x-icon" href="icon.png" width="5px" height="5px">
+    <link rel="icon" type="image/x-icon" href="../images/whites.png" width="5px" height="5px">
     <title> Menu Page </title>
 </head>
 <body>
   <div class="navbar_header">
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <a class="navbar-brand" href="./index.html"> <i class="fa-solid fa-egg"></i> </a>
+        <a class="navbar-brand" href="../index.html"> <i class="fa-solid fa-egg"></i> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse bg-warning" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link nav_text" href="./index.html"> Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link nav_text" href="../index.html"> Home </a>
+            </li>
+            <li class="nav-item bg-warning active">
+              <a class="nav-link nav_text" href="./menu.html"> Menu   <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item bg-warning">
-              <a class="nav-link nav_text" href="html/menu.html"> Menu </a>
+                <a class="nav-link nav_text" href="./find_local.html"> Find Your Local Restaurant </a>
             </li>
             <li class="nav-item bg-warning">
-                <a class="nav-link nav_text" href="html/find_local.html"> Find Your Local Restaurant </a>
+                <a class="nav-link nav_text" href="./book.html"> Book </a>
             </li>
             <li class="nav-item bg-warning">
-                <a class="nav-link nav_text" href="html/book.html"> Book </a>
+                <a class="nav-link nav_text" href="./offers.html"> Offers & Events </a>
             </li>
             <li class="nav-item bg-warning">
-                <a class="nav-link nav_text" href="html/offers.html"> Offers & Events </a>
-            </li>
-            <li class="nav-item bg-warning">
-                <a class="nav-link nav_text" href="html/contact.html"> Contact Us </a>
+                <a class="nav-link nav_text" href="./contact.html"> Contact Us </a>
             </li>
           </ul>
         </div>
     </nav>
-    </div>
+    </div> 
 
-      <header>
+  <div class="header">
         <H2>Eggztra Menu</H2>
-        <img src="whites.png" alt="Girl with egg on head" width="150" height="150">
+        <img src="../images/whites.png" alt="Girl with egg on head" width="150" height="150">
         <div class="menunav">
             <button onclick="toggleFood()"id="foodButton">Food</button>
             <button id="drinkButton">Drink</button>
         </div>
-    </header>
+  </div>
 
     <!--Menu-->
   <div class="menu" id="theMenu"> 
@@ -162,13 +163,14 @@
   <h3>Drinks</h3>
 </div>
 
+
+<!--Newsletter -->
 <div class="newsletter_sign_up_section_container"> 
       
   <div class="logo_newsletter_child">
     <img src="./images/whites.png" alt="Eggztra logo" />  
   </div>
 
-<!--Newsletter -->
   <div class="newsletter_sign_up_child">
     
     <h1 class="homepage_heading" id="newsletter"> Sign up to our newsletter </h1>
@@ -180,6 +182,7 @@
       <input id="surname_input" type="text" placeholder="Surname">
       <input id="email_input" type="text" placeholder="Email Address">
       <button class="button_style" id="sign_up_button"> Sign up! </button>
+    </div>
     </div>
 
   </div> <!--End of Newsletter -->
@@ -243,9 +246,6 @@
 
     </div>
 
-  </div>
-
-  </div>
   
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
