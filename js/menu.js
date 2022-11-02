@@ -80,9 +80,13 @@ foodButton.addEventListener('click', () => {
     if (theFood.style.display === 'block') {
       theFood.style.display = 'none';
       foodButton.innerHTML = 'Food';
+      foodButton.style.background = 'white';
+      foodButton.style.color = 'black';
     } else {
       theFood.style.display = 'block';
-      foodButton.innerHTML = 'Hide food';
+      foodButton.innerHTML = 'Hide Food';
+      foodButton.style.background = '#ffc107';
+      foodButton.style.color = 'white';
     }
 })
 
@@ -95,9 +99,13 @@ var theDrink = document.getElementById('drinkmenu');
 drinkButton.addEventListener('click', () => {
     if (theDrink.style.display === 'block') {
       theDrink.style.display = 'none';
-      drinkButton.innerHTML = 'Drink';
+      drinkButton.innerHTML = 'Drinks';
+      drinkButton.style.background = 'white';
+      drinkButton.style.color = 'black';
     } else {
       theDrink.style.display = 'block';
-      drinkButton.innerHTML = 'Hide drink';
+      drinkButton.innerHTML = 'Hide Drinks';
+      drinkButton.style.background = '#ffc107';
+      drinkButton.style.color = 'white';
     }
 })
