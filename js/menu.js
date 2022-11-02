@@ -1,27 +1,51 @@
+//carousel
+const carousel = document.querySelector('.carousel');
+firstImg = document.querySelectorAll("img")[0];
+arrowIcons = document.querySelectorAll(".carouselwrapper i");
 
-//Show and hide food menu
-function toggleFood(){
-    //get the food menu, get the current value of the menus display property,
-    //get the button
-    var theFood = document.getElementById('foodmenu');
-    var displaySetting = theFood.style.display;
-    var foodButton = document.getElementById('foodButton');
+let isDragStart = false, prevPageX, prevScrollleft;
+let firstImgWidth = firstImg.clientWidth + 14;
+let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
 
-//toggle the foo%d menu and button text depending on current state
-//retrive food menu element, get current display value, check it
-//if the menu is visible display value equals block so is changed to none
-//if the menu display value is none it will change the value to block to make visible      
-if(displaySetting == 'block'){
-    theFood.style.display = 'none';
-    foodButton.innerHTML = 'Show food';
+
+//hide arrow icon if no image remaining to scroll
+const showHideIcons = () => {
+    arrowIcons[0].style.display = carousel.scrollleft == 0 ? "none" : "block";
+    arrowIcons[1].style.display = carousel.scrollleft == scrollWidth ? "none" : "block";
 }
 
-else{
-    theFood.style.display = 'block';
-    foodButton.innerHTML = 'Hide food';
-}
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        carousel.scrollLeft += icon.id == "left" ? - firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(), 60); //calling showHideIcons after 60ms
+    });
+});
+
+const dragStart = (e) =>{
+    isDragStart = true;
+    prevPageX = e.pageX;
+    prevScrollleft = carousel.scrollLeft;
 }
 
+const dragging = (e) => {
+    if(!isDragStart) return
+    e.preventDefault();
+    carousel.classList.add("dragging");
+    let positionDiff = e.pageX - prevPageX;
+    carousel.scrollLeft = prevScrollleft - positionDiff;
+}
+
+const dragStop = () =>{
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+}
+
+
+carousel.addEventListener('mousedown', dragStart);
+carousel.addEventListener('mousemove', dragging);
+carousel.addEventListener('mouseup', dragStop);
+
+//Newsletter
 document.addEventListener("DOMContentLoaded", function() {
 
     // Newsletter sign up button - checks if input box contains an @ //
@@ -44,3 +68,36 @@ document.addEventListener("DOMContentLoaded", function() {
    
     }
     )
+
+//Menu Toggle
+//Food Button - declare button and Food
+var foodButton = document.getElementById('foodButton');
+var theFood = document.getElementById('foodmenu');
+
+//change display and inner HTML on click
+
+foodButton.addEventListener('click', () => {
+    if (theFood.style.display === 'block') {
+      theFood.style.display = 'none';
+      foodButton.innerHTML = 'Food';
+    } else {
+      theFood.style.display = 'block';
+      foodButton.innerHTML = 'Hide food';
+    }
+})
+
+//Food Button - declare button and drink
+var drinkButton = document.getElementById('drinkButton');
+var theDrink = document.getElementById('drinkmenu');
+
+//change display and inner HTML on click
+
+drinkButton.addEventListener('click', () => {
+    if (theDrink.style.display === 'block') {
+      theDrink.style.display = 'none';
+      drinkButton.innerHTML = 'Drink';
+    } else {
+      theDrink.style.display = 'block';
+      drinkButton.innerHTML = 'Hide drink';
+    }
+})

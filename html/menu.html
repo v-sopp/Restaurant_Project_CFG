@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/menu.css"> 
-    <script src="../js/menu.js"></script>
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="icon" type="image/x-icon" href="../images/icon.png" width="5px" height="5px">
     <script src="https://kit.fontawesome.com/82d11ba7d2.js" crossorigin="anonymous"></script>
     <title> Eggztra Menu </title>
@@ -43,20 +42,21 @@
     </nav>
     </div>
 
-      <header>
+    <header>
         <H2>Eggztra Menu</H2>
         <img src="../images/whites.png" alt="Girl with egg on head" width="150" height="150">
-        <div class="menunav">
-            <button onclick="toggleFood()"id="foodButton">Food</button>
-            <button id="drinkButton">Drink</button>
-        </div>
     </header>
 
     <!--Menu-->
-  <div class="menu" id="theMenu"> 
+  <div class="menu" id="menu"> 
     <div class="heading">
         <h3> Our Menu</h3>
         <p> Our eggs are out of this world. Eggztraordinary.</p>
+    </div>
+
+    <div class="menunav">
+      <button id="foodButton">Food</button>
+      <button id="drinkButton">Drink</button>
     </div>
 
 <!--Food Menu-->
@@ -113,22 +113,26 @@
       <div class="item-row">
           <div class="menuitem">
               <h4>Avocado</h4>
+              <br>
               <img src="https://cdn-icons-png.flaticon.com/512/8775/8775265.png" alt="Avocado illustration" width="40px">
            </div>
            <div class="menuitem">
               <h4>Mushrooms</h4>
+              <br>
               <img src="https://cdn-icons-png.flaticon.com/512/7015/7015938.png" alt="Mushroom illustration" width="40px">
            </div>
            <div class="menuitem">
-              <h4>Scrambled Sweetcorn</h4>
+              <h4>Scrambled<br>Sweetcorn</h4>
               <img src="https://cdn-icons-png.flaticon.com/512/6122/6122240.png" alt="Egg illustration" width="40px">
            </div>
            <div class="menuitem">
               <h4>Scrambled</h4>
+              <br>
               <img src="https://cdn-icons-png.flaticon.com/512/1814/1814190.png" alt="Egg illustration" width="40px">
            </div>
            <div class="menuitem">
               <h4>Eggs Benedict</h4>
+              <br>
               <img src="https://cdn-icons-png.flaticon.com/512/5716/5716796.png" alt="Eggs benedict illustration" width="40px">
            </div>
       </div> <!--close item row-->
@@ -152,14 +156,14 @@
            </div>
           <div class="menuitem">
               <h4>Vegan breakfast burrito</h4>
-              <p>soft tortilla filled with tofu & ackee scramble, roasted spiced potatoes, smokey beans, spinach, house slaw, and melted cheese</p>   
+              <p>soft tortilla filled with tofu scramble, roasted spiced potatoes, smokey beans, spinach, house slaw, and melted cheese</p>   
           </div>
       </div> <!--close item-row-->
   </div> <!--close brunch-->
 </div><!--close menuwrap-->
 
 <!--Drink Menu -->
-<div class="menuwrap" id="drink">
+<div class="menuwrap" id="drinkmenu">
   <h3>Drinks</h3>
   <p> Milks: skimmed milk, oatmilk, almond milk, soya milk (no extra charge for plant based milks)</p>
     <!--Smoothies-->
@@ -231,30 +235,26 @@
 
   </div>
 
+<!--Image Carousel -->
+<div class="carouselbackground">
+  <div class="carouselwrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <div class="carousel">
+      <img src="https://www.abouttimemagazine.co.uk/wp-content/uploads/2022/03/6-L1260467-1-1-1200x800.jpg" alt="img">
+      <img src="https://i.insider.com/5e4d4a90bbdfeb4a6060ac8d?width=700" alt="img">
+      <img src="https://www.mondomulia.com/wp-content/uploads/2017/04/Aussie-Coffee-Brunch-Timmy-Green-Nova-Victoria.jpg" alt="img">
+      <img src="https://resdiary-prod.azureedge.net/uploads/uk/11924/images/15759/img69282.jpg" alt="img">
+      <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2017%2F01%2F19%2Fpistachio-crusted-french-toast-strawberry-neufchatel-filling-su-2000.jpg&q=60" alt="img">
+      <img src="https://www.londonxlondon.com/wp-content/uploads/2022/01/Cafe-Van-Gogh-Brunch-Master-1.jpg" alt="img">
+      <img src="https://www.walderwellness.com/wp-content/uploads/2018/08/Easy-Stovetop-Shakshuka-Walder-Wellness-4-683x1024.jpg" alt="img">
+      <img src="https://zestfulkitchen.com/wp-content/uploads/2021/09/yogurt-pancakes-hero-compressed-for-web-5-1000x1099.jpg" alt="img">
+      <img src="https://f3e6t7k9.stackpathcdn.com/wp-content/uploads/2022/02/milkbeach.png" alt="img">
+    </div> <!-- end carousel-->
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div><!-- end carousel wrapper-->
+</div>
 
-
-<!--Newsletter -->
-<div class="newsletter_sign_up_section_container"> 
-      
-  <div class="logo_newsletter_child">
-    <img src="../images/whites.png" alt="Eggztra logo" />  
-  </div>
-
-  <div class="newsletter_sign_up_child">
-    
-    <h1 class="homepage_heading" id="newsletter"> Sign up to our newsletter </h1>
-    <p class="newsletter_text"> Sign up for all the latest Eggztra news, opening information, offers and more. </p>
-    <p class="newsletter_text"> By joining the newsletter you will become a member of the Eggztra Breakfast Club, where you can find exclusive discounts and perks (like free food!) </p>
-
-    <div class="sign_up_bar">
-      <input id="first_name_input" type="text" placeholder="First Name">
-      <input id="surname_input" type="text" placeholder="Surname">
-      <input id="email_input" type="text" placeholder="Email Address">
-      <button class="button_style" id="sign_up_button"> Sign up! </button>
-    </div>
-
-  </div> 
-</div> <!--End of Newsletter -->
+<script src="../js/menu.js"></script>
 
 <!--Card -->
   <div class="card text-center">
