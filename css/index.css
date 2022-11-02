@@ -18,7 +18,7 @@ body {
 /* Main picture section  */
 
 .main_picture_container {
-    background-color: #F3FA5E;
+    background-color: peachpuff;
     border: 3px solid #FF5733;
     border-radius: 25px;
     padding: 25px 50px 25px 50px;
@@ -62,7 +62,7 @@ body {
 /* New menu additions section  */
 
 .menu_additions_container {
-    background-color: #F3FA5E;
+    background-color: peachpuff;
     border: 3px solid #FF5733;
     border-radius: 25px;
     padding: 25px 50px 25px 50px;
@@ -150,7 +150,7 @@ body {
 /* Image gallery section */
 
 .image_gallery_container {
-    background-color: #F3FA5E;
+    background-color: peachpuff;
     border: 3px solid #FF5733;
     border-radius: 25px;
     padding: 25px 50px 25px 50px;
@@ -220,7 +220,7 @@ body {
 /* Newsletter sign up section  */
 
 .newsletter_sign_up_section_container {
-    background-color: #F3FA5E;
+    background-color: peachpuff;
     border: 3px solid #FF5733;
     border-radius: 25px;
     padding: 25px 50px 25px 50px;
@@ -232,7 +232,7 @@ body {
     width: 15%;
     float: left;
     padding: 30px 10px 10px 20px;
-    background-color: #2886FF;
+    background-color: #ffc107;
     border-radius: 25px 0px 0px 25px;
 }
 
@@ -316,7 +316,7 @@ body {
 }
 
 .card_body {
-    background-color: #F3FA5E;
+    background-color: #ffc107;
     display: flex;
     
 }
