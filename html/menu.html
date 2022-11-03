@@ -11,6 +11,7 @@
     <title> Eggztra Menu </title>
 </head>
 <body>
+  <!--Nav bar -->
   <div class="navbar_header">
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <a class="navbar-brand" href="../index.html"> <i class="fa-solid fa-egg"></i> </a>
@@ -42,117 +43,126 @@
     </nav>
   </div>
 
+  <!-- Header -->
   <header>
+    <img id="logo" src="../images/whites.png" alt="Girl with egg on head" width="150" height="150">
     <H2>Eggztra Menu</H2>
-    <img src="../images/whites.png" alt="Girl with egg on head" width="150" height="150">
   </header>
 
   <!--Menu-->
   <div class="menu" id="menu"> 
-    <div class="heading">
-        <h3> Our Menu</h3>
+
+    <div class="menuintro">
+      <div class="heading">
         <p> Our eggs are out of this world. Eggztraordinary.</p>
-    </div>
+      </div><!-- end heading-->
 
-    <div class="menunav">
-      <button id="foodButton">Food</button>
-      <button id="drinkButton">Drink</button>
-    </div>
+      <div class="menunav">
+        <button id="foodButton">Food</button>
+        <button id="drinkButton">Drinks</button>
+      </div><!-- end menu nav-->
 
-<!--Food Menu-->
+    </div> <!-- end menu intro-->
+
+    <!--Food Menu-->
     <div class="menuwrap" id="foodmenu">
 
-    <!--Fry up-->
-    <div class="menu-section" id="fryup">
-      <h3>Fry ups</h3>
-      <p>What did the egg do when it saw the frying pan? It scrambled</p>
+      <!--Fry up-->
+      <div class="menu-section" id="fryup">
+        <h3>Fry ups</h3>
+        <p>What did the egg do when it saw the frying pan? <i>It scrambled</i></p>
         <div class="item-row">
           <div class="menuitem">
-              <h4>The Loaded:</h4>
-              <p> Bacon, scrambled eggs, baked beans, hash browns, mushrooms, two slices of toast - 13</p>
+            <h4>The Loaded:</h4>
+            <p> Bacon, scrambled eggs, baked beans, hash browns, mushrooms, two slices of toast - £13.00</p>
           </div>
           <div class="menuitem">
-              <h4>The Veggie (v):</h4>
-              <p> Vegan sausage, sweetcorn fritter, scrambled eggs, baked beans, hash browns, mushrooms, seasonal greens, two slices of toast - 13 </p>
+            <h4>The Veggie (v):</h4>
+            <p> Vegan sausage, sweetcorn fritter, scrambled eggs, baked beans, hash browns, mushrooms, seasonal greens, two slices of toast - £13.00</p>
           </div>
           <div class="menuitem">
-              <h4>The Vegan (vg):</h4>
-              <p> Vegan Sausage, sweetcorn fritter, scrambled sweetcorn, baked beans, hash browns, mushrooms, seasonal greens, two slices of toast - 13</p>
+            <h4>The Vegan (vg):</h4>
+            <p> Vegan sausage, sweetcorn fritter, scrambled sweetcorn, baked beans, hash browns, mushrooms, seasonal greens, two slices of toast - £13.00</p>
           </div>
-       </div> <!--close item row-->
-  </div> <!--close fryup-->
+        </div> <!--close item row-->
+      </div> <!--close fryup-->
 
-  <!--Baked Egg-->
-  <div class="menu-section" id="bakedeggs">
-      <h3>Baked Eggs</h3>
-      <p>All served with pita. Vegan? ask for tofu scramble and vegan cheese for + £1</p>
-      <div class="item-row">
+      <!--Baked Egg-->
+      <div class="menu-section" id="bakedeggs">
+        <h3>Baked Eggs</h3>
+        <p>All served with freshly baked and seasoned pita. Vegan? ask for tofu scramble and vegan cheese for + £1</p>
+        <div class="item-row">
           <div class="menuitem">
-              <h4>Afghan (v)</h4>
-              <p> mildly spiced tomato sauce, mint and cumin, two eggs - 8.95</p>
-           </div>
-           <div class="menuitem">
-              <h4>Greek (v):</h4>
-              <p> with mildly spiced tomato sauce, Feta and Oregano, two eggs - 9.45 </p>
-           </div>
-           <div class="menuitem">
-              <h4>Mushroom and Spinach (v):</h4>
-              <p> Mushroom and Spinach, two eggs - 8.95</p>
-           </div>
-           <div class="menuitem">
-              <h4>Shakshuka (v):</h4>
-              <p> Rich tomato sauce with cumin, paprika and parsley, two eggs</p>
-           </div>
-      </div> <!--close item row -->
-  </div> <!--close bakedeggs-->
+            <h4>Afghan (v):</h4>
+            <p> mildly spiced tomato sauce, mint and cumin, two eggs - £8.95</p>
+          </div>
+          <div class="menuitem">
+            <h4>Greek (v):</h4>
+            <p> with mildly spiced tomato sauce, Feta and Oregano, two eggs - £9.45 </p>
+          </div>
+          <div class="menuitem">
+            <h4>Mushroom and Spinach (v):</h4>
+            <p> Mushroom and Spinach, two eggs - £8.95</p>
+          </div>
+          <div class="menuitem">
+            <h4>Shakshuka (v):</h4>
+            <p> Rich tomato sauce with cumin, paprika and parsley, two eggs - £9.20</p>
+          </div>
+        </div> <!--close item row -->
+      </div> <!--close bakedeggs-->
 
   <!--Toast-->
-  <div class="menu-section" id="toast">
-      <h3>Toast</h3>
-      <p> Served with sourdough toast</p>
-      <div class="item-row">
+      <div class="menu-section" id="toast">
+        <h3>Toast</h3>
+        <p> Served on sourdough toast with seasonal veg</p>
+        <div class="item-row">
           <div class="menuitem">
-              <h4>Avocado</h4>
-              <img src="https://cdn-icons-png.flaticon.com/512/8775/8775265.png" alt="Avocado illustration" width="40px">
-           </div>
-           <div class="menuitem">
-              <h4>Mushrooms</h4>
+            <h4>Avocado </h4>
+            <p>£7.50</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/8775/8775265.png" alt="Avocado illustration" width="40px">
+          </div>
+          <div class="menuitem">
+            <h4>Mushrooms</h4>
+              <p>£7.00</p>
               <img src="https://cdn-icons-png.flaticon.com/512/7015/7015938.png" alt="Mushroom illustration" width="40px">
-           </div>
+          </div>
            <div class="menuitem">
-              <h4>Scrambled Sweetcorn</h4>
+              <h4>Scrambled Corn</h4>
+              <p>£8.50</p>
               <img src="https://cdn-icons-png.flaticon.com/512/6122/6122240.png" alt="Egg illustration" width="40px">
            </div>
            <div class="menuitem">
-              <h4>Scrambled</h4>
+              <h4>Scrambled Eggs</h4>
+              <p>£8.00</p>
               <img src="https://cdn-icons-png.flaticon.com/512/1814/1814190.png" alt="Egg illustration" width="40px">
            </div>
            <div class="menuitem">
               <h4>Eggs Benedict</h4>
+              <p>£9.50</p>
               <img src="https://cdn-icons-png.flaticon.com/512/5716/5716796.png" alt="Eggs benedict illustration" width="40px">
            </div>
       </div> <!--close item row-->
-  </div> <!--close toast-->
+    </div> <!--close toast-->
 
   <!--Brunch-->
   <div class="menu-section" id="brunch">
       <h3>Brunch Dishes</h3>
       <div class="item-row">
           <div class="menuitem">
-              <h4>Cardamom French Toast:</h4>
-              <p> Baked Cardamom Saffron French Toast with Rose Whipped Cream and Pistachios</p>
+              <h4>Cardamom French Toast (v):</h4>
+              <p> Baked Cardamom Saffron French Toast with Rose Whipped Cream and Pistachios - £11.00</p>
            </div>
           <div class="menuitem">
-               <h4>Canadian Pancakes:</h4>
-               <p> Fluffy Pancakes with youghurt, fruit and maple syrup</p>
+               <h4>Canadian Pancakes (v):</h4>
+               <p> Fluffy Pancakes with youghurt, fruit and maple syrup - £10.00</p>
            </div>
           <div class="menuitem">
-               <h4>Breakfast Muffin with:</h4>
-               <p> Option 1: eggs and sausage <br> Option 2: eggs and vegan sausage <br> Option 3: scrambled corn with vegan sausage</p>
+               <h4>Breakfast Muffin:</h4>
+               <p> Option 1: eggs + sausage <br> Option 2: eggs + vegan sausage (v) <br> Option 3: scrambled corn + vegan sausage (vg) - All £6.50</p>
            </div>
           <div class="menuitem">
-              <h4>Vegan breakfast burrito</h4>
-              <p>soft tortilla filled with tofu scramble, roasted spiced potatoes, smokey beans, spinach, house slaw, and melted cheese</p>   
+              <h4>Vegan Breakfast Burrito (vg):</h4>
+              <p>soft tortilla filled with tofu scramble, roasted spiced potatoes, smokey beans, spinach, house slaw, and melted cheese - £10.50</p>   
           </div>
       </div> <!--close item-row-->
   </div> <!--close brunch-->
@@ -161,70 +171,70 @@
 <!--Drink Menu -->
 <div class="menuwrap" id="drinkmenu">
   <h3>Drinks</h3>
-  <p> Milks: skimmed milk, oatmilk, almond milk, soya milk (no extra charge for plant based milks)</p>
+  <p> Milks: skimmed milk, oatmilk, almond milk, soya milk, oat whipped cream, whipped cream (no extra charge for plant based milks or creams)</p>
     <!--Smoothies-->
     <div class="menu-section" id="smoothies">
-      <h3>Smoothies</h3>
+      <h3>Smoothies </h3>
       <div class="item-row">
           <div class="menuitem">
-              <h4>Peach Melba</h4>
-              <p> Peach, raspberry and apple juice </p>
+              <h4>Peach Melba (vg):</h4>
+              <p> Peach, raspberry and apple juice - £4.50 </p>
            </div>
           <div class="menuitem">
-               <h4>Mean Green:</h4>
-               <p> Spinach, kale, lemon and apple juice </p>
+               <h4>Mean Green (vg):</h4>
+               <p> Spinach, kale, lemon and apple juice - £4.50 </p>
            </div>
           <div class="menuitem">
-               <h4>Pretty in pink:</h4>
-               <p> Raspberry, strawberry, banana and apple juice
+               <h4>Pretty in Pink (vg):</h4>
+               <p> Raspberry, strawberry, banana and apple juice - £4.50 </p>
            </div>
           <div class="menuitem">
               <h4>Herb Garden:</h4>
-              <p> Parsley, pear, avacodo, lemon, apple juicea</p>   
+              <p> Parsley, pear, avacodo, lemon, apple juicea - £4.50 </p>   
           </div>
       </div> <!--close item-row-->
     </div>
    <!-- Hot Drinks -->   
   <div class="menu-section" id="smoothies">
-      <h3>Hot Drinks:</h3>
+      <h3>Hot Drinks</h3>
       <div class="item-row">
           <div class="menuitem">
               <h4>Coffee:</h4>
-              <p> Espress + water <br> Flat white <br> Latte <br> Cappucino <br> Filter coffee </p>
+              <p> Espress + water - £2.50 <br> Flat white - £2.75 <br> Latte - £3.00 <br> Cappucino - £3.00 <br> Filter coffee - £2.50 </p>
            </div>
           <div class="menuitem">
                <h4> Something sweeter:</h4>
-               <p> Chai Latte <br> Dirty Chai <br> Mocha <br> Hot choclate </p>
+               <p> Chai Latte - £3.00 <br> Dirty Chai - £3.60 <br> Mocha - £3.50 <br> Hot choclate - £3.00 </p>
            </div>
           <div class="menuitem">
-               <h4>Teapot:</h4>
-               <p> Breakfast <br> Green <br> Morocan Mint <br> Chalmomile <br> Red Berry and Hibiscus </p>
+               <h4>Tea:</h4>
+               <p> Breakfast - £2.00 <br> Green - £2.00 <br> Morocan Mint - £2.00<br> Chalmomile - £2.00<br> Red Berry and Hibiscus - £2.00</p>
            </div>
           <div class="menuitem">
               <h4>Seasonal specials:</h4>
-              <p> Smore Hot Choclate: with graham cracker and marshmellow <br><br> Pumpkin Spice latte with whipped cream</p>   
+              <p> Smore Hot Choclate: with graham cracker and marshmellow - £3.75 <br><br> Pumpkin Spice Latte: with whipped cream - £3.70</p>   
           </div>
       </div> <!--close item-row-->
     </div> <!-- close hot drinks -->
    <!-- Cocktails -->   
    <div class="menu-section" id="smoothies">
-    <h3> Cocktails:</h3>
+    <h3> Cocktails</h3>
     <div class="item-row">
         <div class="menuitem">
-            <h4>Bloody Mary</h4>
-            <p>Vodka, Lemon Juice, Worcestershire Sauce, Tobasco, Tomato Juice, Salt and peper  </p>
+            <h4>Bloody Mary (vg):</h4>
+            <p>Vodka, Lemon Juice, Worcestershire Sauce, Tobasco, Tomato Juice, Salt and pepper - £7.00</p>
          </div>
         <div class="menuitem">
-             <h4> Peach Bellini </h4>
-             <p> Peach Liquer, Peach Puree and Prosecco </p>
+             <h4> Peach Bellini (vg): </h4>
+             <p> Peach Liquer, Peach Puree and Prosecco - £6.00 </p>
          </div>
         <div class="menuitem">
-             <h4>Citrus Fizz - Mocktail</h4>
-             <p> Whole egg mixed with three citrus juices, grenadine, soda  </p>
+             <h4>Citrus Fizz - Mocktail (v):</h4>
+             <p> Whole egg mixed with three citrus juices, grenadine, soda - £4.50 </p>
          </div>
         <div class="menuitem">
-            <h4>Old Thyme Sour</h4>
-            <p> Thyme and Green Chartreuse, Irish whiskey, elderflower, egg white, lemon, and cinnamon-thyme syrup</p>   
+            <h4>Old Thyme Sour (v):</h4>
+            <p> Thyme and Green Chartreuse, Irish whiskey, elderflower, egg white, lemon, and cinnamon-thyme syru - £6.70</p>   
         </div>
     </div> <!--close item-row-->
   </div> <!-- close hot drinks -->

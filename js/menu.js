@@ -1,38 +1,41 @@
 //carousel
-const carousel = document.querySelector('.carousel');
-firstImg = document.querySelectorAll("img")[0];
+const carousel = document.querySelector(".carousel");
+firstImg = carousel.querySelectorAll("img")[0];
 arrowIcons = document.querySelectorAll(".carouselwrapper i");
 
-let isDragStart = false, prevPageX, prevScrollleft;
-let firstImgWidth = firstImg.clientWidth + 14;
-let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+let isDragStart = false, prevPageX, prevScrollLeft;
 
 
 //hide arrow icon if no image remaining to scroll
 const showHideIcons = () => {
-    arrowIcons[0].style.display = carousel.scrollleft == 0 ? "none" : "block";
-    arrowIcons[1].style.display = carousel.scrollleft == scrollWidth ? "none" : "block";
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
 }
 
+//if clicked icon is left,reduce width value from the carousel else add to it
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
+        let firstImgWidth = firstImg.clientWidth + 14;
         carousel.scrollLeft += icon.id == "left" ? - firstImgWidth : firstImgWidth;
         setTimeout(() => showHideIcons(), 60); //calling showHideIcons after 60ms
     });
 });
 
-const dragStart = (e) =>{
+const dragStart = (e) => {
     isDragStart = true;
     prevPageX = e.pageX;
-    prevScrollleft = carousel.scrollLeft;
+    prevScrollLeft = carousel.scrollLeft;
 }
 
+//scrolling images/carousel to left according to mouse pointer
 const dragging = (e) => {
-    if(!isDragStart) return
+    if(!isDragStart) return;
     e.preventDefault();
     carousel.classList.add("dragging");
     let positionDiff = e.pageX - prevPageX;
-    carousel.scrollLeft = prevScrollleft - positionDiff;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
 }
 
 const dragStop = () =>{
@@ -41,9 +44,9 @@ const dragStop = () =>{
 }
 
 
-carousel.addEventListener('mousedown', dragStart);
-carousel.addEventListener('mousemove', dragging);
-carousel.addEventListener('mouseup', dragStop);
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+carousel.addEventListener("mouseup", dragStop);
 
 //Newsletter
 document.addEventListener("DOMContentLoaded", function() {
