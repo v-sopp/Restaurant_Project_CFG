@@ -13,7 +13,7 @@ let hrs = d.getHours();
 
 
 answer.addEventListener('click', () => {
-    if(day <  5 && hrs < 16 && hrs >= 8 ){
+    if(day <  5 && day > 0 && hrs < 16 && hrs >= 8 ){
         answer.innerHTML = 'We are open. Take a break from work and come get some eggs!';
     } else if(day >= 5 && day <= 6 && hrs < 22 && hrs >= 8 ) {
         answer.innerHTML = 'We are open. Fresh eggs at the ready until 10pm!';
