@@ -13,12 +13,12 @@ let hrs = d.getHours();
 
 
 answer.addEventListener('click', () => {
-    if(day <  5 && day > 0 && hrs < 16 && hrs >= 8 ){
+    if(day == 0 && hrs < 22 && hrs >= 10){
+        answer.innerHTML = 'We are open. Come get some sunday brunch!';
+     } else if(day <  5 && hrs < 16 && hrs >= 8 ){
         answer.innerHTML = 'We are open. Take a break from work and come get some eggs!';
     } else if(day >= 5 && day <= 6 && hrs < 22 && hrs >= 8 ) {
         answer.innerHTML = 'We are open. Fresh eggs at the ready until 10pm!';
-    } else if(day == 0 && hrs < 22 && hrs >= 10) {
-        answer.innerHTML = 'We are open. Come get some sunday brunch!';
     } else {
         answer.innerHTML = 'Sorry, we are closed at the moment. We are open 7 days a week and will back at our stations cooking up a storm soon. Check times above.'; 
         console.log(hrs);
